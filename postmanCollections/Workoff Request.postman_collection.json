@@ -1,0 +1,235 @@
+{
+	"info": {
+		"_postman_id": "ec6d45bb-0a79-4ed2-b432-67b41d075ad1",
+		"name": "Workoff Request",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "7492999"
+	},
+	"item": [
+		{
+			"name": "EmployeeRequests",
+			"item": [
+				{
+					"name": "add",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"tc_no\": \"11111111111\",\n    \"sgk_no\": \"11111111111\",\n    \"name\": \"John\",\n    \"surname\": \"Doe\",\n    \"begin_date\": \"2022-12-12\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "workoff_request.test/employee/add",
+							"host": [
+								"workoff_request",
+								"test"
+							],
+							"path": [
+								"employee",
+								"add"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "edit",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"quit_date\": \"2022-12-12\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "workoff_request.test/employee/11111111111/edit",
+							"host": [
+								"workoff_request",
+								"test"
+							],
+							"path": [
+								"employee",
+								"11111111111",
+								"edit"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "workoff_request.test/employee/11111111111/delete",
+							"host": [
+								"workoff_request",
+								"test"
+							],
+							"path": [
+								"employee",
+								"11111111111",
+								"delete"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "WorkoffRequests",
+			"item": [
+				{
+					"name": "add",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"tc_no\":\"11111111111\",\n    \"begin_date\": \"2022-10-10\",\n    \"end_date\": \"2022-11-11\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "workoff_request.test/workoff/add",
+							"host": [
+								"workoff_request",
+								"test"
+							],
+							"path": [
+								"workoff",
+								"add"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "edit",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"tc_no\":\"11111111111\",\n    \"begin_date\": \"2022-10-10\",\n    \"end_date\": \"2022-10-11\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "workoff_request.test/workoff/11111111111/2022-10-10/2022-11-11",
+							"host": [
+								"workoff_request",
+								"test"
+							],
+							"path": [
+								"workoff",
+								"11111111111",
+								"2022-10-10",
+								"2022-11-11"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "workoff_request.test/workoff/11111111111/2022-10-10/2022-11-11",
+							"host": [
+								"workoff_request",
+								"test"
+							],
+							"path": [
+								"workoff",
+								"11111111111",
+								"2022-10-10",
+								"2022-11-11"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getEmployeeListByDateRange",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "workoff_request.test/workoff/2022-10-10/2022-11-11",
+							"host": [
+								"workoff_request",
+								"test"
+							],
+							"path": [
+								"workoff",
+								"2022-10-10",
+								"2022-11-11"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getEmployeeByName",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "workoff_request.test/workoff/johndoe",
+							"host": [
+								"workoff_request",
+								"test"
+							],
+							"path": [
+								"workoff",
+								"johndoe"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getEmployeesListByWorkoffStatus",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "workoff_request.test/workoff/present/status",
+							"host": [
+								"workoff_request",
+								"test"
+							],
+							"path": [
+								"workoff",
+								"present",
+								"status"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
