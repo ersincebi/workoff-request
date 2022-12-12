@@ -24,12 +24,14 @@
 							}
 						},
 						"url": {
-							"raw": "workoff_request.test/employee/add",
+							"raw": "workoff_request.test/api/v1/employee/add",
 							"host": [
 								"workoff_request",
 								"test"
 							],
 							"path": [
+								"api",
+								"v1",
 								"employee",
 								"add"
 							]
@@ -52,12 +54,14 @@
 							}
 						},
 						"url": {
-							"raw": "workoff_request.test/employee/11111111111/edit",
+							"raw": "workoff_request.test/api/v1/employee/11111111111/edit",
 							"host": [
 								"workoff_request",
 								"test"
 							],
 							"path": [
+								"api",
+								"v1",
 								"employee",
 								"11111111111",
 								"edit"
@@ -72,12 +76,14 @@
 						"method": "DELETE",
 						"header": [],
 						"url": {
-							"raw": "workoff_request.test/employee/11111111111/delete",
+							"raw": "workoff_request.test/api/v1/employee/11111111111/delete",
 							"host": [
 								"workoff_request",
 								"test"
 							],
 							"path": [
+								"api",
+								"v1",
 								"employee",
 								"11111111111",
 								"delete"
@@ -106,12 +112,14 @@
 							}
 						},
 						"url": {
-							"raw": "workoff_request.test/workoff/add",
+							"raw": "workoff_request.test/api/v1/workoff/add",
 							"host": [
 								"workoff_request",
 								"test"
 							],
 							"path": [
+								"api",
+								"v1",
 								"workoff",
 								"add"
 							]
@@ -134,12 +142,14 @@
 							}
 						},
 						"url": {
-							"raw": "workoff_request.test/workoff/11111111111/2022-10-10/2022-11-11",
+							"raw": "workoff_request.test/api/v1/workoff/11111111111/2022-10-10/2022-11-11",
 							"host": [
 								"workoff_request",
 								"test"
 							],
 							"path": [
+								"api",
+								"v1",
 								"workoff",
 								"11111111111",
 								"2022-10-10",
@@ -155,12 +165,14 @@
 						"method": "DELETE",
 						"header": [],
 						"url": {
-							"raw": "workoff_request.test/workoff/11111111111/2022-10-10/2022-11-11",
+							"raw": "workoff_request.test/api/v1/workoff/11111111111/2022-10-10/2022-11-11",
 							"host": [
 								"workoff_request",
 								"test"
 							],
 							"path": [
+								"api",
+								"v1",
 								"workoff",
 								"11111111111",
 								"2022-10-10",
@@ -176,12 +188,14 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "workoff_request.test/workoff/2022-10-10/2022-11-11",
+							"raw": "workoff_request.test/api/v1/workoff/2022-10-10/2022-11-11",
 							"host": [
 								"workoff_request",
 								"test"
 							],
 							"path": [
+								"api",
+								"v1",
 								"workoff",
 								"2022-10-10",
 								"2022-11-11"
@@ -196,12 +210,14 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "workoff_request.test/workoff/johndoe",
+							"raw": "workoff_request.test/api/v1/workoff/johndoe",
 							"host": [
 								"workoff_request",
 								"test"
 							],
 							"path": [
+								"api",
+								"v1",
 								"workoff",
 								"johndoe"
 							]
@@ -215,12 +231,14 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "workoff_request.test/workoff/present/status",
+							"raw": "workoff_request.test/api/v1/workoff/present/status",
 							"host": [
 								"workoff_request",
 								"test"
 							],
 							"path": [
+								"api",
+								"v1",
 								"workoff",
 								"present",
 								"status"
